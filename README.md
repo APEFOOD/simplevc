@@ -47,7 +47,7 @@ Now you can use SimpleVC's methods and classes like:
 * $video = new Video($filename); 
 
 // instantiate  video converter object 
-* $video_converter = VideoConverter($video); 
+* $video_converter = new VideoConverter($video); 
 
 // get the ffmpeg conversion command 
 * $command = $video_converter->convert(); 
