@@ -1,0 +1,38 @@
+{
+	"name": "apefood/simplevc", 
+	"description": "Convert video/audio files to web friendly formats", 
+	"keywords": ["converter", "audio", "video"], 
+	"homepage": "https://github.com/APEFOOD/simplevc", 
+	"license": "MIT", 
+	"authors": [
+		{
+			"name": "Kabelo Nkakala", 
+			"homepage": "http://twitter.com/LordKabelo", 
+			"role": "Developer"
+		}
+	], 
+	"support": {
+		"email": "kabelonkakala20@gmail.com"
+	}, 
+	"require": {
+		"php": ">=5.4.0"
+	},  
+	"autoload": { 
+		"psr-4": { 
+			"Apefood\\SimpleVC\\": "src/"
+		} 
+	}	
+}	
+	
+
+
+
+
+
+
+
+
+
+
+
+	
