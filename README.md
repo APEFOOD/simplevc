@@ -62,7 +62,7 @@ that command as a job/task.
 ```PHP 
 
 // get html5 video's <source> tags for the video file & it's associated fall-back options. 
-$html = new HtmlFactory($video_converter); 
+$html = new HtmlFactory($video); 
 $source = $html->render(); 
 
 ```
