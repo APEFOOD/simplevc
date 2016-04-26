@@ -27,7 +27,7 @@ class HtmlFactory
 	protected $tags; 
 	
 	/**
-	* Construct the HTML5 video <source> tag 
+	* Construct the HTML5 video & audio <source> tag 
 	* 
 	* @param \Apefood\SimpleVC\Media 
 	* @return void 

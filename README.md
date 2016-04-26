@@ -86,10 +86,6 @@ just to be on the safe side. It's 2016, why would you have 3GP files anyway?
 
 ## Closing. 
 
-Do you like this package? Do you hate it? Is there something I'm not doing right (of course there is)? 
-Got a suggestion? Quickest way to find me is via [twitter] (https://twitter.com/LordKabelo). This is my 
-first PHP package, so I welcome pull requests and see them as a learning opportunity more than anything else. 
-To paraphrase the great Gavin Belson; Together, we can make the world a better place. 
 
 
 
