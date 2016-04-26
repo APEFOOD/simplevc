@@ -50,7 +50,7 @@ class HtmlFactory
 		
 		$this->tags = ''; 
 		
-		// If the output files are not equal to 3, that means the original file was already in a 
+		// If the output files are not equal to 3, that means the original file is already in a 
 		// a web friendly format. Append it to the tags string. 
 		if (count($this->ofiles) != 3) { 
 			

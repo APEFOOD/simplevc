@@ -136,6 +136,18 @@ abstract class Media
 		
 		return $this->filename; 
 		
+	} 
+	
+	/**
+	* Getter method for the file name (without the extension) 
+	* 
+	* @return string $name 
+	*/ 
+	public function getName() 
+	{
+		
+		return $this->name; 
+		
 	}	
 	
 	/**

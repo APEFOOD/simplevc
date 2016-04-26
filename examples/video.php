@@ -22,7 +22,11 @@ var_dump($video_converter);
 
 // FFmpeg command: schedule as task to exec(), preferably on a different machine/EC2 instance.  
 $command = $video_converter->convert(); 
-var_dump($command);   
+var_dump($command);
+
+// FFmpeg command for extracting video frames. Also best treated as a scheduled task. 
+$frames = $video_converter->extractFrames("01:00", "03:00", 3,"png"); 
+var_dump($frames);    
 
 // HTML object (returns <source> tags) 
 $html = new HtmlFactory($video); 

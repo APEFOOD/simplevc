@@ -71,6 +71,34 @@ Now since the exec() command will be deferred and not run immediately, that mean
 $source variable points to at least 2 non-existent files at the moment. So perhaps you can 
 also defer publishing the video on a web page until the conversion task has completed. 
 
+# Extracting video frames 
+
+This command will help you extract video frames and save them as images. You can then use those 
+images as preview content for your videos. 
+
+```PHP 
+
+// Time on the video where you want to start extracting the frames. 
+// Defaults to null, in which case FFmpeg will start the extraction from beginning of the video.  
+$start = "01:00"; // from minute 1 [hh]:mm:ss 
+
+// Stop the extraction after t = $end. Note that if you don't provide the $start argument, it's pointless 
+// to specify an $end parameter since the VideoConverter class will just override it to null. 
+$end = "03:00"; // stop after 3 minutes 
+
+// How many frames per minute would you like to extract? 
+$frames = 2; 
+
+// Your preferred image format. Defaults to JPEG. 
+$format = "jpeg"; 
+
+$video_frames = $video_converter->extractFrames($start, $end, $frames, $format); 
+
+``` 
+
+Again, this only returns the FFmpeg command [string] needed to complete this task. It's up to you to actually 
+execute this command on the shell (i.e. ``` $ php exec($video_frames); ``` ), when and how you please. 
+
 ## Example 2: audio conversion 
 
 There is no example 2 because it's pretty much the same as example 1, but with an audio file. 
