@@ -37,7 +37,8 @@ class VideoConverter extends Converter
 	*
 	* @param string $start (i.e "01:00" for "at 1 minutes played") 
 	* @param string $end (i.e "03:00" for "stop after 3 minutes") 
-	* @param int $frames (per minute)  
+	* @param int $frames (per minute) 
+	* @param string $format 
 	* @return string $command 
 	*/ 
 	public function extractFrames(string $start = null, string $end = null, int $frames = 2, $format = 'jpeg') 

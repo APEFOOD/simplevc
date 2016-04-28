@@ -94,7 +94,7 @@ abstract class Media
 		
 		// Does the supposed file exist? 
 		if (!file_exists($filename)) {
-			throw new \Exception('No file detected ****'); 
+			throw new \Exception('No file detected'); 
 		}	
 		
 		// Is it a file? 
